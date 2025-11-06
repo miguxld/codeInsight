@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeInsight - Análisis de Código con IA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Marca de agua visual en el fondo -->
+    <div class="watermark">HECHO POR MIGUXLD</div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">◆</span>
+                <span>CodeInsight</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Características</a>
+                <a href="#demo">Demo</a>
+                <a href="#pricing">Planes</a>
+            </div>
+            <a href="https://miguxld-portafolio.netlify.app/" class="btn-portfolio">Mi Portafolio</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Análisis Inteligente de Código con IA</h1>
+            <p>Descubre problemas de seguridad, mejora tu código y aprende mejores prácticas en tiempo real con inteligencia artificial.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('demo')">Probar Ahora</button>
+                <button class="btn btn-secondary" onclick="window.open('https://github.com/miguxld', '_blank')">Ver en GitHub</button>
+            </div>
+            <div class="stats">
+                <div class="stat">
+                    <strong>10K+</strong>
+                    <span>Análisis Completados</span>
+                </div>
+                <div class="stat">
+                    <strong>500+</strong>
+                    <span>Desarrolladores</span>
+                </div>
+                <div class="stat">
+                    <strong>99%</strong>
+                    <span>Precisión</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-placeholder">
+                <img src="/placeholder.svg?height=500&width=500" alt="Análisis de código inteligente">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Características Principales</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🔍</div>
+                <h3>Detección de Vulnerabilidades</h3>
+                <p>Identifica automáticamente vulnerabilidades de seguridad y problemas de rendimiento en tu código.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Sugerencias Impulsadas por IA</h3>
+                <p>Recibe recomendaciones inteligentes para mejorar la calidad y eficiencia de tu código.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Reportes Detallados</h3>
+                <p>Obtén análisis completos con métricas y gráficos para entender mejor tu proyecto.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Análisis en Tiempo Real</h3>
+                <p>Procesa y analiza tu código al instante con nuestra infraestructura optimizada.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <h3>Integración Continua</h3>
+                <p>Conecta fácilmente con GitHub, GitLab y tus herramientas favoritas.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📚</div>
+                <h3>Aprende Mejores Prácticas</h3>
+                <p>Accede a recursos educativos y aprende de cada análisis realizado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <h2>Cómo Funciona</h2>
+        <div class="demo-container">
+            <div class="demo-code">
+                <div class="code-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <pre><code>// Tu código aquí
+function getUserData(id) {
+  const data = fetch(
+    'https://api.example.com/users/' + id
+  );
+  return data;
+}
+
+// CodeInsight detecta:
+// ⚠️ Vulnerable a inyección SQL
+// ⚠️ Sin manejo de errores
+// ✅ Usa fetch() correctamente</code></pre>
+            </div>
+            <div class="demo-result">
+                <h3>Análisis de CodeInsight</h3>
+                <div class="result-item error">
+                    <span class="result-icon">✗</span>
+                    <div>
+                        <strong>Vulnerabilidad Crítica</strong>
+                        <p>Inyección SQL detectada en construcción de URL</p>
+                    </div>
+                </div>
+                <div class="result-item warning">
+                    <span class="result-icon">!</span>
+                    <div>
+                        <strong>Falta de Validación</strong>
+                        <p>El parámetro id no es validado antes de usarse</p>
+                    </div>
+                </div>
+                <div class="result-item success">
+                    <span class="result-icon">✓</span>
+                    <div>
+                        <strong>Buen Uso de Async</strong>
+                        <p>Considere usar async/await para mejor legibilidad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <h2>Planes y Precios</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Básico</h3>
+                <div class="price">Gratis</div>
+                <ul>
+                    <li>✓ 5 análisis por mes</li>
+                    <li>✓ Detección básica</li>
+                    <li>✗ Reportes avanzados</li>
+                </ul>
+                <button class="btn btn-secondary">Comenzar</button>
+            </div>
+            <div class="pricing-card featured">
+                <div class="featured-badge">Popular</div>
+                <h3>Profesional</h3>
+                <div class="price">$29<span>/mes</span></div>
+                <ul>
+                    <li>✓ Análisis ilimitados</li>
+                    <li>✓ Detección avanzada</li>
+                    <li>✓ Reportes completos</li>
+                    <li>✓ Soporte prioritario</li>
+                </ul>
+                <button class="btn btn-primary">Suscribirse</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Empresa</h3>
+                <div class="price">Personalizado</div>
+                <ul>
+                    <li>✓ Todo incluido</li>
+                    <li>✓ API dedicada</li>
+                    <li>✓ SLA garantizado</li>
+                    <li>✓ Capacitación incluida</li>
+                </ul>
+                <button class="btn btn-secondary">Contactar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <h2>¿Listo para mejorar tu código?</h2>
+        <p>Únete a cientos de desarrolladores que usan CodeInsight para escribir mejor código</p>
+        <button class="btn btn-primary btn-large" onclick="alert('¡Gracias por tu interés! Este es un proyecto demo.')">Comienza Gratis Ahora</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>CodeInsight</h4>
+                <p>Análisis de código impulsado por IA</p>
+            </div>
+            <div class="footer-section">
+                <h4>Enlaces</h4>
+                <ul>
+                    <li><a href="#features">Características</a></li>
+                    <li><a href="#pricing">Precios</a></li>
+                    <li><a href="https://github.com/miguxld" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Creador</h4>
+                <p>Diseñado y desarrollado por <strong>Miguel</strong></p>
+                <p class="creator-links">
+                    <a href="https://miguxld-portafolio.netlify.app/" target="_blank">Portafolio</a> • 
+                    <a href="https://github.com/miguxld" target="_blank">GitHub</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 CodeInsight. Hecho con ❤️ por <a href="https://miguxld-portafolio.netlify.app/" target="_blank"><strong>miguxld</strong></a></p>
+            <p class="code-credit">/* Código limpio y bien documentado por @miguxld */</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
