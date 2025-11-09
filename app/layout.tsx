@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "CodeInsight - Análisis de Código con IA",
   description:
     "Analiza tu código con inteligencia artificial. Detecta bugs, mejora rendimiento y escribe código más limpio. Landing page por MIGUXLD",
-  generator: "v0.app",
+  generator: ".app",
   creator: "MIGUXLD",
 }
 
